@@ -3,7 +3,7 @@
   --cor-preta: rgb(57, 50, 50);
   --cor-branco: white;
   --cor-cinza: gray;
-  --cor-roxo: purple;
+  --cor-azul: blue;
 }
 
 /* Estilo para toda a tela */
@@ -44,5 +44,27 @@ body {
 }
 
 h2 strong {
-  color: var(--cor-roxo);
+  color: var(--cor-azul);
+}
+
+.data {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 40%;
+}
+
+.data span {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--cor-cinza);
+}
+
+.data span:not(:last-child):after {
+  content: "/";
+  margin-bottom: 3px;
 }
