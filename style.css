@@ -1,0 +1,48 @@
+/* Variaveis de cores */
+:root {
+  --cor-preta: black;
+  --cor-branco: white;
+  --cor-cinza: gray;
+  --cor-roxo: purple;
+}
+
+/* Estilo para toda a tela */
+* {
+  background-color: var(--cor-preta);
+  color: var(--cor-branco);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.relogio {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.relogio span {
+  font-size: 150px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.relogio span:not(:last-child):after {
+  content: ":";
+  margin-bottom: 25px;
+  color: var(--cor-cinza);
+}
+
+h2 strong {
+  color: var(--cor-roxo);
+}
